@@ -30,6 +30,7 @@ import nltk
 from collections import Counter
 
 # Authorizing the package in twitters API
+#%%
 from twitterCredentials import *
 
 auth = twitter.oauth.OAuth(
@@ -87,3 +88,6 @@ print(pyConTag["statuses"][0]['user'])
 
 pyConTagExt = t.search.tweets(q="#pycon", tweet_mode='extended')
 [i["full_text"] for i in pyConTagExt["statuses"]]
+
+
+#%%
